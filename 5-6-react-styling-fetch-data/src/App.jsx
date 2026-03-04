@@ -237,7 +237,7 @@ export default function App() {
      Dependency array MUST be: [searchTerm, users]
      ========================================================= */
    useEffect(() => {
-   if (searchTerm.trim() === "") {
+   if (!searchTerm) {
     setFilteredUsers(users);
   } 
   else {
